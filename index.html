@@ -5,24 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Patidar International | Safed Musli Exporter</title>
+<meta name="description" content="Farm-grown premium Safed Musli exporter from India. Own cultivation, export quality, trusted Ayurvedic ingredient.">
+
+<!-- Professional Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 body{
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Montserrat', Arial, sans-serif;
   color:#2f3e2f;
-  line-height:1.6;
+  line-height:1.7;
 }
 
 /* HERO */
 .hero{
-  background:url("images/hero.jpg") center/cover no-repeat;
-  color:#fff;
-  padding:100px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/hero.jpg") center/cover no-repeat;
+  color:#ffffff;
+  padding:120px 20px;
   text-align:center;
 }
-.hero h1{font-size:42px;margin-bottom:10px;}
-.hero p{font-size:18px;max-width:800px;margin:auto;}
+
+.hero h1{
+  font-size:44px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+.hero p{
+  font-size:18px;
+  font-weight:500;
+  max-width:900px;
+  margin:auto;
+  line-height:1.8;
+}
 
 /* SECTIONS */
 section{
@@ -30,11 +49,13 @@ section{
   max-width:1100px;
   margin:auto;
 }
+
 h2{
   text-align:center;
   color:#2e7d32;
   font-size:32px;
   margin-bottom:30px;
+  font-weight:700;
 }
 
 /* FLEX */
@@ -44,13 +65,15 @@ h2{
   flex-wrap:wrap;
   align-items:center;
 }
-.flex img{
-  width:100%;
-  border-radius:10px;
-}
+
 .flex div{
   flex:1;
   min-width:280px;
+}
+
+.flex img{
+  width:100%;
+  border-radius:12px;
 }
 
 /* GRID */
@@ -59,35 +82,46 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:25px;
 }
+
 .card{
-  border:1px solid #ddd;
+  border:1px solid #e0e0e0;
   padding:25px;
-  border-radius:10px;
+  border-radius:12px;
   background:#fafafa;
   text-align:center;
 }
-.card img{
-  width:100%;
-  border-radius:8px;
-  margin-bottom:15px;
-}
 
 /* LIST */
-ul{list-style:none;padding:0;}
-ul li{padding:6px 0;}
-ul li::before{content:"✔ ";color:#2e7d32;font-weight:bold;}
+ul{
+  list-style:none;
+  padding:0;
+}
 
-/* DARK */
+ul li{
+  padding:8px 0;
+  font-weight:500;
+}
+
+ul li::before{
+  content:"✔ ";
+  color:#2e7d32;
+  font-weight:700;
+}
+
+/* DARK SECTION */
 .dark{
   background:#2e7d32;
-  color:#fff;
+  color:#ffffff;
 }
-.dark h2{color:#fff;}
+
+.dark h2{
+  color:#ffffff;
+}
 
 /* FOOTER */
 footer{
   background:#1b5e20;
-  color:#fff;
+  color:#ffffff;
   text-align:center;
   padding:30px 15px;
   font-size:14px;
@@ -102,7 +136,7 @@ footer{
   <h1>🌿 PATIDAR INTERNATIONAL</h1>
   <p>
     Farm-Grown Premium Safed Musli from India<br>
-    Own Cultivation | Export-Quality | Trusted Ayurvedic Ingredient
+    Own Cultivation · Export-Quality · Trusted Ayurvedic Ingredient
   </p>
 </div>
 
@@ -121,7 +155,7 @@ footer{
       </p>
     </div>
     <div>
-      <img src="images/about-farm.jpg" alt="Safed Musli Farm India">
+      <img src="images/hero.jpg" alt="Safed Musli Farming India">
     </div>
   </div>
 </section>
@@ -129,8 +163,8 @@ footer{
 <!-- PRODUCT -->
 <section>
   <h2>🌿 OUR PRODUCT</h2>
-  <p style="text-align:center;">
-    <strong>SAFED MUSLI (Chlorophytum borivilianum)</strong>
+  <p style="text-align:center;font-weight:600;">
+    SAFED MUSLI (Chlorophytum borivilianum)
   </p>
   <p style="text-align:center;">
     Safed Musli is a high-value medicinal root widely used in Ayurveda, nutraceuticals,
@@ -164,28 +198,10 @@ footer{
   <h2>📦 PRODUCT FORMS AVAILABLE</h2>
   <div class="grid">
     <div class="card">
-      <img src="images/raw-musli.jpg" alt="Raw Safed Musli Roots">
       <h3>Raw Safed Musli Roots</h3>
     </div>
     <div class="card">
-      <img src="images/dried-musli.jpg" alt="Dehydrated Safed Musli Roots">
       <h3>Dehydrated Safed Musli Roots</h3>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section>
-  <h2>🧪 QUALITY & PROCESSING</h2>
-  <div class="flex">
-    <div>
-      <img src="images/processing.jpg" alt="Herbal Processing">
-    </div>
-    <div>
-      <p>
-        Carefully cleaned, properly graded, hygienically processed and moisture-controlled
-        to ensure export stability and consistent quality.
-      </p>
     </div>
   </div>
 </section>
@@ -193,21 +209,16 @@ footer{
 <!-- WHY US -->
 <section class="dark">
   <h2>🌍 WHY PATIDAR INTERNATIONAL?</h2>
-  <div class="flex">
-    <div>
-      <ul>
-        <li>Own farm cultivation (no third-party sourcing)</li>
-        <li>Complete quality control</li>
-        <li>Consistent bulk supply</li>
-        <li>Export-ready hygiene standards</li>
-        <li>Competitive long-term pricing</li>
-      </ul>
-      <p><strong>When you source from us, you source directly from the farm.</strong></p>
-    </div>
-    <div>
-      <img src="images/packaging.jpg" alt="Herbal Export Packaging">
-    </div>
-  </div>
+  <ul style="max-width:800px;margin:auto;">
+    <li>Own farm cultivation (no third-party sourcing)</li>
+    <li>Complete quality control</li>
+    <li>Consistent bulk supply</li>
+    <li>Export-ready hygiene standards</li>
+    <li>Competitive pricing for long-term buyers</li>
+  </ul>
+  <p style="text-align:center;font-weight:600;margin-top:20px;">
+    When you source from us, you source directly from the farm.
+  </p>
 </section>
 
 <!-- WORK WITH -->
@@ -217,10 +228,10 @@ footer{
     <div class="card">Importers</div>
     <div class="card">Distributors</div>
     <div class="card">Nutraceutical Brands</div>
-    <div class="card">Herbal & Pharma Manufacturers</div>
+    <div class="card">Herbal & Pharmaceutical Manufacturers</div>
   </div>
   <p style="text-align:center;margin-top:20px;">
-    Bulk orders | Contract supply | Long-term partnerships
+    Bulk orders · Contract supply · Long-term partnerships
   </p>
 </section>
 
