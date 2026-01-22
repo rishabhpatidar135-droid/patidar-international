@@ -10,9 +10,12 @@
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Font Awesome for WhatsApp Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 *{
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 html, body{
@@ -125,6 +128,13 @@ ul li::before{
   color:#ffffff;
 }
 
+/* CONTACT LINKS */
+a{
+  color:#2e7d32;
+  text-decoration:none;
+  font-weight:600;
+}
+
 /* FOOTER */
 footer{
   background:#1b5e20;
@@ -134,27 +144,27 @@ footer{
   font-size:14px;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP FLOAT BUTTON */
 .whatsapp-float{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:#fff;
+  color:#ffffff;
   width:55px;
   height:55px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:28px;
+  font-size:30px;
   text-decoration:none;
   box-shadow:0 4px 10px rgba(0,0,0,0.3);
   z-index:999;
 }
 
 /* MOBILE FIXES */
-@media (max-width: 768px){
+@media (max-width:768px){
 
   .hero{
     padding:90px 15px;
@@ -271,8 +281,10 @@ footer{
   <h2>📞 CONNECT WITH US</h2>
   <p style="text-align:center;">
     📍 <strong>Gulfood Exhibition – Dubai 2026</strong><br><br>
-    📞 <strong>Phone / WhatsApp:</strong> <a href="https://wa.me/917000342149" target="_blank">+91 7000342149</a><br>
-    📧 <strong>Email:</strong> <a href="mailto:patidarinternationofficial@gmail.com">patidarinternationofficial@gmail.com</a>
+    📞 <strong>Phone / WhatsApp:</strong>
+    <a href="https://wa.me/917000342149" target="_blank">+91 7000342149</a><br>
+    📧 <strong>Email:</strong>
+    <a href="mailto:patidarinternationofficial@gmail.com">patidarinternationofficial@gmail.com</a>
   </p>
 </section>
 
@@ -282,8 +294,8 @@ footer{
 </footer>
 
 <!-- WHATSAPP FLOAT BUTTON -->
-<a href="https://wa.me/917000342149" class="whatsapp-float" target="_blank">
-  💬
+<a href="https://wa.me/917000342149" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
